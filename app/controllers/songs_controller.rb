@@ -17,5 +17,5 @@ class SongsController < ApplicationController
   post '/songs' do
     @song = Song.create(params["Name"])
     @song.artist= Artist.find_or_create_by(:name => params["Artist Name"])
-    
+    song.
 end
