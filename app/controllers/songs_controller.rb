@@ -1,6 +1,5 @@
 # post '/songs' do
-#   flash[:message] = "Successfully created song."
-#   redirect to("/songs/#{@song.slug}")
+
 # end
 class SongsController < ApplicationController
   use Rack::Flash
@@ -19,5 +18,6 @@ class SongsController < ApplicationController
     @song.artist= Artist.find_or_create_by(:name => params["Artist Name"])
     @songs.genre_ids = params[:genres]
     @song.save
+    
     
 end
