@@ -15,5 +15,6 @@ class SongsController < ApplicationController
   end
   
   post '/songs' do
-    @song = Song.create(params[:songs])
+    @song = Song.create(params["Name"])
+    
 end
