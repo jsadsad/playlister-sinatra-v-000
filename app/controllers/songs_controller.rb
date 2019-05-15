@@ -3,4 +3,5 @@
 #   redirect to("/songs/#{@song.slug}")
 # end
 class SongsController < ApplicationController
-  use 
+  use Rack::Flash
+  
