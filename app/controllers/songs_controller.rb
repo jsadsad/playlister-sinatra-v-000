@@ -9,3 +9,7 @@ class SongsController < ApplicationController
     @songs = Song.all
     erb :"/songs/index"
   end
+  
+  get '/songs/new' do
+    erb :"/songs/new"
+  end
